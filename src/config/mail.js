@@ -1,10 +1,17 @@
+const {
+  host_email: host,
+  port_email: port,
+  user_email: user,
+  pass_email: pass
+} = process.env;
+
 export default {
-  host: "smtp.mailtrap.io",
-  port: 2525,
+  host,
+  port,
   secure: false,
   auth: {
-    user: "f1cd1ce28ea247",
-    pass: "e1ac542febe3b9"
+    user,
+    pass
   },
   default: {
     from: "Equipe GoBarber <noreply@gobarber.com>"
